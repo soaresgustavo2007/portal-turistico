@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: #1e7f5c; /* VERDE */
+  padding: 20px 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-container img {
+  width: 60px;
+  height: 50px;
+}
+
+.logo-container h1 {
+  color: white;
+  font-size: 22px;
+}
+
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ativo {
+  border-bottom: 2px solid #a8e6cf;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: url('../img/bg.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+}
+
+.overlay h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.overlay button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #a8e6cf;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* GRID MELHORADO */
+.grid {
+  display: flex;
+  gap: 30px; /* MAIS ESPAÇO */
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+}
+
+.card p {
+  padding: 0 15px 15px;
+}
+
+/* VIDEO */
+.video iframe {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+/* ASIDE */
+.aside {
+  background: #dff5ec;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #1e7f5c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
